@@ -13,8 +13,8 @@ Public Class RealmManager
     Public Property HeavenLightColor As Color = Color.FromArgb(255, 255, 255, 200)
     Public Property HellLightColor As Color = Color.FromArgb(255, 255, 0, 0)
     Public Property HeavenMusic As String = "heaven_theme.wav"
-    Public Property HellMusic As String = "hell_ambience.wav"
-    Public Property TransitionTime As Integer = 3000 ' milliseconds
+    Private Property HellMusic As String = "hell_ambience.wav"
+    Protected Property TransitionTime As Integer = 3000 ' milliseconds
 
     Public Event RealmChanged(newRealm As GameRealm)
 
@@ -177,3 +177,4 @@ Public Class Angel
     End Sub
 
 End Class
+
