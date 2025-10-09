@@ -8,6 +8,8 @@ Public Class RealmManager
     Private _transitioning As Boolean
 
     ' Realm Properties
+    Property Color As COLOR = Color.FromArgb(255, 0, 255, 0)
+    Property LightColor As Color = Color.FromArgb(0, 255, 0, 255)
     Public Property HeavenLightColor As Color = Color.FromArgb(255, 255, 255, 200)
     Public Property HellLightColor As Color = Color.FromArgb(255, 255, 0, 0)
     Public Property HeavenMusic As String = "heaven_theme.wav"
@@ -173,4 +175,5 @@ Public Class Angel
     Public Sub HealPlayer()
         Player.Health += 50
     End Sub
+
 End Class
